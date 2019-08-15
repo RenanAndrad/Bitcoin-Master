@@ -1,0 +1,12 @@
+Guide/.idea
+*.iml
+.gradle
+/local.properties
+BitcoinMaster/.idea/workspace.xml
+BitcoinMaster/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+BitcoinMaster/app/build/
+BitcoinMaster/gradle.properties
