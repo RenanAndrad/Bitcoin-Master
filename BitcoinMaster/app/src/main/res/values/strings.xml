@@ -1,6 +1,30 @@
 <resources>
-    <string name="app_name">BitcoinMaster</string>
+    <!--General-->
+    <string name="app_name">Bitcoin Master</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <!--MainFragment-->
+    <string name="dolar_symbol">U$</string>
+    <string name="value_bitcoin_defautl">12.000,00</string>
+    <string name="title_bitcoin">Bitcoin</string>
+    <string name="price_bitcoin">Preço últimas 24 horas</string>
+
+
+    <!--ChartFragment-->
+    <string name="title_chart_fragment">Histórico</string>
+    <string name="button_today">hoje</string>
+    <string name="button_week">7 dias</string>
+    <string name="button_month">30 dias</string>
+    <string name="button_six_month">180 dias</string>
+
+
+    <string name="one_day">0days</string>
+    <string name="one_week">7days</string>
+    <string name="one_mouth">30days</string>
+    <string name="six_mouths">180days</string>
+
+
+
 </resources>
