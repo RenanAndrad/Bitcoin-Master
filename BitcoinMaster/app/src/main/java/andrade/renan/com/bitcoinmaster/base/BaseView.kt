@@ -1,11 +1,13 @@
 package andrade.renan.com.bitcoinmaster.base
 
-import android.content.Context
 
 
 interface BaseView {
 
-//    fun getContext(): Context
-//  fun getContext()
+    fun showError(error:String)
+    fun upadateData()
+    fun showLoading()
+    fun hideLoading()
+    fun isLoading():Boolean
 
 }

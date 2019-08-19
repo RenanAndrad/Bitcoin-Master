@@ -8,8 +8,6 @@ interface ChartView: BaseView {
 
     fun showValidationMessage(errorCode: Int)
     fun openMainActivity()
-    fun showError()
-    fun showLoading()
 
     fun loadMarketPrice(marketPrice: MarketPrice?)
 

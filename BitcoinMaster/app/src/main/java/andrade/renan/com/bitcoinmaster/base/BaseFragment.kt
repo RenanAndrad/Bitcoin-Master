@@ -1,7 +1,9 @@
 package andrade.renan.com.bitcoinmaster.base
 
+import android.content.Context
 import android.graphics.Typeface
 import android.os.Bundle
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 
 
@@ -22,12 +24,6 @@ abstract class BaseFragment<P : BasePresenter<BaseView>> : BaseView, Fragment() 
 
     protected abstract fun instantiatePresenter(): P
 
-//    override fun getContext(): Context {
-//        return this.context
-//    }
-
-//    override fun getContext() {
-//    }
 
     private fun loadFronts() {
         //Open Sans font
@@ -39,4 +35,10 @@ abstract class BaseFragment<P : BasePresenter<BaseView>> : BaseView, Fragment() 
         sUbuntuFontRegular = Typeface.createFromAsset(activity?.applicationContext?.assets, "fonts/Ubuntu-Regular.ttf")
         sUbuntuFontBold = Typeface.createFromAsset(activity?.applicationContext?.assets, "fonts/Ubuntu-Bold.ttf")
     }
+
+     fun Context.toast(message: CharSequence) =
+        Toast.makeText(this,message, Toast.LENGTH_SHORT).show()
+
+
+
 }

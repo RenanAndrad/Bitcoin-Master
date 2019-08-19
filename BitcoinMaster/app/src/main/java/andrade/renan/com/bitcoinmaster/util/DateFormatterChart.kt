@@ -9,15 +9,14 @@ class DateFormatterChart: ValueFormatter() {
 
 
     override fun getAxisLabel(value: Float, axis: AxisBase?): String {
-        return convertLongToTime(value.toLong())
+        return convertLongToTime(value.toLong()* 1000L)
     }
 
 
     fun convertLongToTime(time: Long): String {
         val date = Date(time)
-        val format = SimpleDateFormat("dd/MM/yyyy")
-        var teste:String = format.format(date)
-        return teste
+        val format = SimpleDateFormat("dd/MM")
+        return format.format(date)
     }
 
 }

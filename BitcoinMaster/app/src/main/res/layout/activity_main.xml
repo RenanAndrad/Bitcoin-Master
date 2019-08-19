@@ -38,7 +38,7 @@
             android:id="@+id/detailsFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:name="andrade.renan.com.bitcoinmaster.ui.main.fragments.Main.MainFragment"/>
+            android:name="andrade.renan.com.bitcoinmaster.ui.main.fragments.Stats.StatsFragment"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

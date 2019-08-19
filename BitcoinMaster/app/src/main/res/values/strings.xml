@@ -2,28 +2,34 @@
     <!--General-->
     <string name="app_name">Bitcoin Master</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
+    <string name="title_dashboard">Gráfico</string>
     <string name="title_notifications">Notifications</string>
+    <string name="error_message">Não foi possível carregar os dados.</string>
+    <string name="update_date_messsage">Dados atualizados.</string>
+
 
     <!--MainFragment-->
     <string name="dolar_symbol">U$</string>
-    <string name="value_bitcoin_defautl">12.000,00</string>
-    <string name="title_bitcoin">Bitcoin</string>
+    <string name="value_bitcoin_defautl">0,00</string>
+    <string name="title_bitcoin">Cotação Bitcoin</string>
     <string name="price_bitcoin">Preço últimas 24 horas</string>
 
 
     <!--ChartFragment-->
     <string name="title_chart_fragment">Histórico</string>
-    <string name="button_today">hoje</string>
+    <string name="description_chart">Preço de mercado</string>
+    <string name="button_today">1 dia</string>
     <string name="button_week">7 dias</string>
-    <string name="button_month">30 dias</string>
-    <string name="button_six_month">180 dias</string>
+    <string name="button_month">1 mês</string>
+    <string name="button_three_month">3 meses</string>
+    <string name="button_six_month">6 meses</string>
 
 
-    <string name="one_day">0days</string>
+    <string name="one_day">1days</string>
     <string name="one_week">7days</string>
-    <string name="one_mouth">30days</string>
-    <string name="six_mouths">180days</string>
+    <string name="one_month">30days</string>
+    <string name="three_months">90days</string>
+    <string name="six_months">180days</string>
 
 
 

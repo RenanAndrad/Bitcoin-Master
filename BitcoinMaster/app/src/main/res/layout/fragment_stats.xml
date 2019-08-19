@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:background="#FFFFFF"
-        tools:context=".ui.main.fragments.Main.MainFragment">
+        tools:context=".ui.main.fragments.Stats.StatsFragment">
 
     <TextView
             android:text="@string/title_bitcoin"
@@ -52,23 +52,26 @@
 
 
         <TextView
-                android:id="@+id/dolarSymbol"
-                android:layout_width="wrap_content"
-                android:textSize="@dimen/extra_large_font"
-                android:text="@string/dolar_symbol"
-                android:layout_height="wrap_content"
-        />
-
-        <TextView
+                android:gravity="center"
                 android:id="@+id/valueBitcoin"
                 android:layout_width="wrap_content"
                 android:textSize="@dimen/extra_large_font"
-                android:text="@string/value_bitcoin_defautl"
+                android:textColor="@color/colorBlue"
                 android:layout_height="wrap_content"
         />
 
 
     </LinearLayout>
+    <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBarStats"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
 
 
     <!--<com.github.mikephil.charting.charts.LineChart-->
@@ -95,7 +98,7 @@
     <!--app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.498"-->
     <!--app:layout_constraintVertical_bias="0.657"/>-->
 
-<!--</FrameLayout>-->
+    <!--</FrameLayout>-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

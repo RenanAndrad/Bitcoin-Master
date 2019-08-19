@@ -3,6 +3,7 @@ package andrade.renan.com.bitcoinmaster.base
 import android.content.Context
 import android.graphics.Typeface
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -23,10 +24,6 @@ abstract class BaseActivity<P : BasePresenter<BaseView>> : BaseView, AppCompatAc
 
     protected abstract fun instantiatePresenter(): P
 
-//    override fun getContext(): Context {
-//        return this
-//    }
-
 
     private fun loadFronts() {
         //Open Sans font
@@ -38,4 +35,7 @@ abstract class BaseActivity<P : BasePresenter<BaseView>> : BaseView, AppCompatAc
         sUbuntuFontRegular = Typeface.createFromAsset(assets, "fonts/Ubuntu-Regular.ttf")
         sUbuntuFontBold = Typeface.createFromAsset(assets, "fonts/Ubuntu-Bold.ttf")
     }
+
+     fun Context.toast(message: CharSequence) =
+        Toast.makeText(this,message, Toast.LENGTH_SHORT).show()
 }

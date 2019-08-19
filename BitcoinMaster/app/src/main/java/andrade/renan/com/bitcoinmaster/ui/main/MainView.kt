@@ -5,6 +5,5 @@ import andrade.renan.com.bitcoinmaster.model.MarketPrice
 
 interface MainView: BaseView {
 
-    fun loadMarketPrice(marketPrice: MarketPrice?)
 
 }

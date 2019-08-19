@@ -15,13 +15,14 @@ class RetrofitInit {
         .build()
 
     val retrofit = Retrofit.Builder()
-        .baseUrl("https://api.blockchain.info/charts/")
+        .baseUrl("https://api.blockchain.info/")
         .addConverterFactory(GsonConverterFactory.create())
         .client(okHttpClient)
         .build()
 
 
-    fun getMarketPriceService() = retrofit.create(Iservice::class.java)
+    fun getService() = retrofit.create(Iservice::class.java)
+
 
 
 }
