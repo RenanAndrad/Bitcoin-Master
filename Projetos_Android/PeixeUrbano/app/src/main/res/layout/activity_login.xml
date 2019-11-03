@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="peixe_urbano.com.hot_deals.ui.login.LoginViewModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".ui.login.LoginActivity">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfileImage"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="70dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/com_facebook_profile_picture_blank_portrait"
+            android:tint="@color/colorGrayDefault"
+            app:civ_border_width="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/layoutProfileInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/linear_layout_dimen"
+            android:layout_marginTop="45dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/ivProfileImage"
+            tools:layout_editor_absoluteX="15dp">
+
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/profileInfoTextView"
+                android:text="@={viewModel.user.name}">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvEmail"
+                style="@style/profileInfoTextView"
+                android:text="@={viewModel.user.email}">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/btnFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutProfileInfo" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/linear_layout_dimen"
+            android:layout_marginLeft="@dimen/linear_layout_dimen"
+            android:layout_marginEnd="@dimen/linear_layout_dimen"
+            android:layout_marginRight="@dimen/linear_layout_dimen"
+            android:background="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btnContinue"
+                style="@style/btnDefault"
+                android:background="@drawable/btn_green"
+                android:text="@string/btn_continue" />
+
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

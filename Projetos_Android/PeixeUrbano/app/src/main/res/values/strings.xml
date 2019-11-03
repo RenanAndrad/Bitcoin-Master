@@ -1,0 +1,14 @@
+<resources>
+    <!--General-->
+    <string name="app_name">Hot Deals</string>
+    <string name="ok">OK</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="btn_continue">Continue</string>
+    <string name="generic_permissions">Precisamos de todas as permissões para continuar.</string>
+
+   <!--Facebook-->
+    <string name="facebook_app_id">506037200126065</string>
+    <string name="fb_login_protocol_scheme">fb506037200126065</string>
+
+</resources>

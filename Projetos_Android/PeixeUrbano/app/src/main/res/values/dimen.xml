@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--layout dimen-->
+    <dimen name="linear_layout_dimen">15dp</dimen>
+
+    <!--font size-->
+    <dimen name="tv_font_textsize_default">15dp</dimen>
+    <dimen name="tv_font_textsize_large">18dp</dimen>
+
+</resources>
